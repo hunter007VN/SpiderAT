@@ -43,6 +43,6 @@ class WebDriverTestCase extends PHPUnit_Framework_TestCase {
    * @return string
    */
   protected function getTestPath($path) {
-    return 'file:///'.dirname(__FILE__).'/html/'.$path;
+    return 'https://cciha.ccinteg.com/'.$path;
   }
 }
