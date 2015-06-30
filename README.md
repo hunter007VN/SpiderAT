@@ -2,7 +2,12 @@
 Customize from php-webdriver -- WebDriver bindings for PHP
 ===========================================
 
-java -jar selenium-server-2.16.1.jar
+java -jar G:\1.Projects\Archived\Automation_Framework\PHPunit_Framework\SpiderAT\selenium\selenium-server-2.16.1.jar
+
+ C:\xampp\php\phpunit.bat -c ./tests
+ 
+ phpunit -c ./tests
+ 
 
 GETTING STARTED
 

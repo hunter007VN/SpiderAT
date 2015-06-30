@@ -1,6 +1,7 @@
 <?php
 
-class BaseTest extends WebDriverTestCase {
+class BaseTest extends WebDriverTestCase
+{
 
 //    public function testLogin() {
 //
@@ -12,7 +13,8 @@ class BaseTest extends WebDriverTestCase {
 //        sleep(5);
 //    }
 
-    public function testNewReceiveInventory() {
+    public function testNewReceiveInventory()
+    {
 
         $this->driver->get($this->getTestPath('index.html'));
         sleep(5);
