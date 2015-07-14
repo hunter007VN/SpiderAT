@@ -19,24 +19,24 @@
  * Try running it by 
  *   '../vendor/phpunit/phpunit/phpunit.php ExampleTestCase.php'
  */
-class FileUploadTest extends WebDriverTestCase {
-  
-  public function testFileUploading() {
-    $this->driver->get($this->getTestPath('upload.html'));
-    $file_input = $this->driver->findElement(WebDriverBy::id('upload'));
-    $file_input->setFileDetector(new LocalFileDetector())
-               ->sendKeys(__DIR__ . '/files/FileUploadTestCaseFile.txt');
-    self::assertNotEquals($this->getFilePath(), $file_input->getAttribute('value'));
-  }
-
-  public function testUselessFileDetectorSendKeys() {
-    $this->driver->get($this->getTestPath('upload.html'));
-    $file_input = $this->driver->findElement(WebDriverBy::id('upload'));
-    $file_input->sendKeys($this->getFilePath());
-    self::assertEquals($this->getFilePath(), $file_input->getAttribute('value'));
-  }
-  
-  private function getFilePath() {
-    return __DIR__ . '/files/FileUploadTestCaseFile.txt';
-  }
-}
+//class FileUploadTest extends WebDriverTestCase {
+//
+//  public function testFileUploading() {
+//    $this->driver->get($this->getTestPath('upload.html'));
+//    $file_input = $this->driver->findElement(WebDriverBy::id('upload'));
+//    $file_input->setFileDetector(new LocalFileDetector())
+//               ->sendKeys(__DIR__ . '/files/FileUploadTestCaseFile.txt');
+//    self::assertNotEquals($this->getFilePath(), $file_input->getAttribute('value'));
+//  }
+//
+//  public function testUselessFileDetectorSendKeys() {
+//    $this->driver->get($this->getTestPath('upload.html'));
+//    $file_input = $this->driver->findElement(WebDriverBy::id('upload'));
+//    $file_input->sendKeys($this->getFilePath());
+//    self::assertEquals($this->getFilePath(), $file_input->getAttribute('value'));
+//  }
+//
+//  private function getFilePath() {
+//    return __DIR__ . '/files/FileUploadTestCaseFile.txt';
+//  }
+//}
